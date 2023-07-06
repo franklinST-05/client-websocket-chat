@@ -2,7 +2,7 @@ import CardMessage from "@/components/CardMessage";
 import TimeIndicator from "@/components/TimeIndicator";
 import { useChatContext } from "@/contexts/ChatContext";
 import { MessageRes } from "@/services/socket/interfaces";
-import { compareDate } from "@/utils/date";
+import { compareParcialDate } from "@/utils/date";
 import React, { Fragment, useEffect, useRef } from "react";
 
 interface ViewMessagesProps {
@@ -30,7 +30,7 @@ const ViewMessages: React.FC<ViewMessagesProps> = ({ messages }) => {
       
       {messages.map((msg, index) => {
         const prevMessage = messages[index - 1];
-        const showDate = compareDate(prevMessage?.date, msg.date);
+        const showDate = compareParcialDate(prevMessage?.date, msg.date);
 
         return (
           <Fragment key={index}>

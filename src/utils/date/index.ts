@@ -17,7 +17,7 @@ export const getFutureDate = (days: number): Date => {
   return new Date(futureDate);
 };
 
-export function compareDate(prevDate: Date | string | undefined, date: Date | string | undefined): boolean {
+export function compareParcialDate(prevDate: Date | string | undefined, date: Date | string | undefined): boolean {
   if (!prevDate || !date) return false;
 
   const convertedPrevDate = new Date(prevDate);
@@ -25,6 +25,15 @@ export function compareDate(prevDate: Date | string | undefined, date: Date | st
   
   convertedPrevDate.setHours(0, 0, 0, 0);
   convertedDate.setHours(0, 0, 0, 0);
+  
+  return convertedPrevDate < convertedDate;
+}
+
+export function compareDate(prevDate: Date | string | undefined, date: Date | string | undefined): boolean {
+  if (!prevDate || !date) return false;
+
+  const convertedPrevDate = new Date(prevDate);
+  const convertedDate = new Date(date);
   
   return convertedPrevDate < convertedDate;
 }

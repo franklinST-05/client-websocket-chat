@@ -1,34 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Chat com Node.js e Socket.IO
+Este é o frontend do Chat criado pelo TikToker e Desenvolvedor <a href="https://www.tiktok.com/@todev3">Emerson (Tode)</a>. Durante a live, Emerson demonstrou como criar um sistema de chat utilizando Node.js e Socket.IO. Este frontend foi desenvolvido por mim com Next.js para fornecer uma interface de usuário interativa para o Chat.
 
-## Getting Started
+---
 
-First, run the development server:
+<details>
+  <summary>
+    Paginas
+  </summary>
+  <img src="./git/laptop-login.png" />
+  <img src="./git/laptop.png" />
+  <img src="./git/laptop-chat.png" />
+</details>
 
+----
+
+### Pré-requisitos
+Antes de começar, certifique-se de ter as seguintes ferramentas instaladas:
+
+- Node.js: versão 14 ou superior
+- npm: gerenciador de pacotes do Node.j`s (normalmente instalado junto com o Node.js)
+
+### Instalação
+Siga estas etapas para configurar e executar o frontend do Chat:
+
+- Clone este repositório para o seu ambiente local:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+git clone https://github.com/franklinST-05/fala-meu-mano.web
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Navegue até o diretório do projeto:
+```bash
+cd fala-meu-mano.web
+```
+- Instale as dependências do projeto:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Execute o mesmo passo a passo do lado de <a href="https://github.com/Todev3/fala-meu-mano">server</a>
 
-## Learn More
+Execute ambas as aplicações
+Abra o navegador e acesse http://localhost:3002 para visualizar o Chat.
 
-To learn more about Next.js, take a look at the following resources:
+### Funcionalidades
+- Envio e recebimento de mensagens em tempo real
+- Listagem de usuários conectados
+- Notificações de entrada e saída de usuários
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Tecnologias utilizadas
+- Next.js: framework React para renderização no lado do servidor (SSR) e construção de aplicativos web
+- Socket.IO: biblioteca de comunicação em tempo real que permite a troca bidirecional de eventos entre o cliente e o servidor
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Contribuição
+Se você quiser contribuir com este projeto, fique à vontade para abrir uma issue ou enviar um pull request. Sua contribuição é muito apreciada!

@@ -50,7 +50,7 @@ const Sidebar: React.FC = () => {
   },[]);
 
   return (
-    <aside className={`fixed flex flex-col transition-all w-96 z-view top-0 -left-full lg:left-0 h-screen bg-container px-2 space-y-4 ${activeSidebar ? "left-0":""}`}>
+    <aside className={`fixed flex flex-col transition-all w-80 xl:w-96 z-view top-0 -left-96 lg:left-0 h-screen bg-container px-2 space-y-4 ${activeSidebar ? "left-0":""}`}>
       <div>
         <div className="py-8 px-2 flex items-center gap-4">
           <Image src={Icon} alt="ChatGPT" height={40} width={40}/>
